@@ -127,7 +127,17 @@ body {
     margin-left: 50px;
 }
 
+.movieListWrapper{
+    position: relative;
+}
+
 .featuredContext {
+    height: 50vh;
+    background-color: tomato;
+    padding: 50px;
+}
+.featuredContent{
+    margin-top: 40px;
     height: 50vh;
     background-color: tomato;
     padding: 50px;
@@ -160,24 +170,81 @@ body {
     align-items: center;
 }
 
+.movieListContainer{
+    padding: 0 20px;
+}
 .movieListItemImg {
     width: 270px;
     height: 200px;
     object-fit: cover;
     transition: all 0.5s ease-in-out;
+    border-radius: 10px;
 }
+
 
 .movieListItem:hover .movieListItemImg {
     transform: scale(1.2);
     margin: 0 30px;
+    opacity: 0.5;
+}
+.movieListItem:hover .movieListItemTitle,
+.movieListItem:hover .movieListItemDesc,
+.movieListItem:hover .movieListItemButton{
+    opacity: 1;
 }
 
 .movieListItem {
     margin-right: 30px;
-    margin-top: 60px;
+    position: relative;
+
 }
 
 .movieListItemTitle{
     background-color: #333;
     font-size: 32px;
+    padding: 0 10px;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 50px;
+    opacity: 0;
+    transition: 1s ease;
+    border-radius: 10px;
+}
+.movieListItemDesc{
+    background-color: #333;
+    font-size: 14px;
+    padding:10px;
+    position: absolute;
+    top: 30%;
+    left: 50px;
+    width: 200px;
+    opacity: 0;
+    transition: 1s ease;
+    border-radius: 10px;
+
+}
+.movieListItemButton{
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    color: #151515;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    font-weight: bold;
+    opacity: 0;
+    transition: 1s ease;
+
+
+}
+
+.arrow {
+    position: absolute;
+    font-size: 100px;
+    top: 125px;
+    right: 0;
+    
 }
