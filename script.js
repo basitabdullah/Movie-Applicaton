@@ -16,3 +16,12 @@ arrows.forEach((arrow,i)=>{
 
   })
 })
+
+const ball = document.querySelector(".toogleBall")
+const items = document.querySelectorAll(".container, .movieListTitle, .navBar, .navBarContainer, .logo, .sideBar , .leftmenuItems, .toggle")
+ball.addEventListener("click",()=>{
+  items.forEach(item=>{
+    item.classList.toggle("active")
+  })
+  ball.classList.toggle("active")
+})

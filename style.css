@@ -115,6 +115,7 @@ body {
     right: 1px;
     border-radius: 50%;
     cursor: pointer;
+    transition: 0.5s ease;
 }
 
 .container {
@@ -252,4 +253,33 @@ body {
     right: 0;
     opacity: 0.5;
     
+}
+.container.active{
+background-color: #ffff;
+}
+.movieListTitle.active{
+    margin-top: 20px;
+    color: #151515;
+}
+.navBar.active{
+    background-color: #fff;
+}
+.navBarContainer.active{
+    color: black;
+}
+.logo.active{
+    color: black;
+}
+.sideBar.active{
+    background-color: #ffff;
+}
+.leftmenuItems.active{
+    color: black;
+}
+.toggle.active{
+    background-color: black;
+}
+.toogleBall.active{
+    background-color: #fff;
+    transform: translateX(-20px);
 }
