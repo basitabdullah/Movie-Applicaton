@@ -129,6 +129,7 @@ body {
 
 .movieListWrapper{
     position: relative;
+    overflow: hidden;
 }
 
 .featuredContext {
@@ -244,7 +245,8 @@ body {
 .arrow {
     position: absolute;
     font-size: 100px;
-    top: 125px;
+    top: 104px;
     right: 0;
+    opacity: 0.5;
     
 }
